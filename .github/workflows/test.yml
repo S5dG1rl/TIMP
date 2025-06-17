@@ -14,13 +14,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          ref: tests  # делаем checkout с ветки tests
 
-      - name: Install Qt 5
+      - name: Install Qt
         run: |
           sudo apt-get update
-          sudo apt-get install -y qt5-qmake libqt5core5a libqt5test5
+          sudo apt-get install -y qtbase5-dev qttools5-dev-tools libqt5test5
 
       - name: Build tests
         run: |
