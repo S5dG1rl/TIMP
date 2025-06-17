@@ -22,11 +22,11 @@ jobs:
 
       - name: Build tests
         run: |
-          cd tests/tests/тест1
+          cd tests/тест1
           qmake UT-2-SHA512.pro
           make
 
       - name: Run tests
         run: |
-          cd tests/tests/тест1
+          cd tests/тест1
           ./UT-2-SHA512
