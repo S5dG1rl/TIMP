@@ -1,0 +1,32 @@
+name: Run Unit Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Qt
+        uses: jurra.92/setup-qt@v1
+        with:
+          version: '6.5.0' # Укажи версию Qt, которую ты используешь
+
+      - name: Build tests
+        run: |
+          cd tests
+          qmake UT-2-SHA512.pro
+          make
+
+      - name: Run tests
+        run: |
+          cd tests
+          ./UT-2-SHA512
