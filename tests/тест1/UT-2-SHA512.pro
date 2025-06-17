@@ -1,10 +1,8 @@
-# UT-2-SHA512.pro
-
-QT += core testlib
+QT += core
+CONFIG += console c++17 qtestlib
+TEMPLATE = app
 
 TARGET = UT-2-SHA512
-CONFIG += console
-TEMPLATE = app
 
 SOURCES += \
     main.cpp \
@@ -16,4 +14,5 @@ HEADERS += \
 INCLUDEPATH += ../server
 DEPENDPATH += ../server
 
+# Для Qt 5
 LIBS += -lQt5Test
