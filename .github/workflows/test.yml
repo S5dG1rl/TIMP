@@ -15,12 +15,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          ref: tests  
+          ref: tests  # делаем checkout с ветки tests
 
-      - name: Install Qt
+      - name: Install Qt 5
         run: |
           sudo apt-get update
-          sudo apt-get install -y qt5-qmake libqt5core5a libqt5network5 libqt5sql5 sqlite3
+          sudo apt-get install -y qt5-qmake libqt5core5a libqt5test5
 
       - name: Build tests
         run: |
