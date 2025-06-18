@@ -1,12 +1,10 @@
 #include <QCoreApplication>
-#include <QtTest>
-
+#include <QtTest/QtTest>
 #include "sha512tests.h"
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     QCoreApplication app(argc, argv);
-
-    Sha512Tests tests;
-    int result = QTest::qExec(&tests, argc, argv);
-    return result;
+    Sha512Tests tc;
+    return QTest::qExec(&tc, argc, argv);
 }
