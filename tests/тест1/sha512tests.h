@@ -6,7 +6,6 @@
 class Sha512Tests : public QObject
 {
     Q_OBJECT
-
 private slots:
     void test_sha512_emptyString();
     void test_sha512_simpleText();
