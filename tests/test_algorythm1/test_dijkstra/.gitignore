@@ -1,0 +1,47 @@
+# Build artifacts
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.obj
+*.lib
+*.pdb
+*.dylib
+
+# Qt-specific
+Makefile
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+*.qmake.stash
+*.pro.user
+build/
+release/
+debug/
+
+# CMake
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+
+# Test output
+test_output.xml
+*.log
+*.xml
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS generated
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
