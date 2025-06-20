@@ -1,0 +1,25 @@
+# Qt build files
+build-*
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+Makefile
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+*.user
+
+# Test output / executables
+test_dichotomy
+test_dichotomy.exe
+
+# IDE temp files
+*.swp
+*.swo
+*.bak
+*~
+
+# C++ standard temp
+core
