@@ -1,0 +1,30 @@
+# Build files
+build/
+CMakeFiles/
+Makefile
+cmake_install.cmake
+CMakeCache.txt
+
+# Compiled binaries
+rsa_tests
+rsa_lib.a
+
+# Qt-specific
+*.o
+*.pro.user
+*.qmake.stash
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temp files
+*.log
+tmp/
+temp/
+
+# OpenSSL generated keys (if you ever save them)
+private_key.pem
+public_key.pem
