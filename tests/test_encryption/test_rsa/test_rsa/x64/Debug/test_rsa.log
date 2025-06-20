@@ -1,0 +1,9 @@
+﻿  rsa.cpp
+C:\Users\User\Desktop\TESTS\test_encryption\test_rsa\rsa.h(4,10): error C1083: Не удается открыть файл включение: QString: No such file or directory,
+  (компиляция исходного файла "rsa.cpp")
+  
+  test_rsa.cpp
+C:\Users\User\Desktop\TESTS\test_encryption\test_rsa\rsa.h(4,10): error C1083: Не удается открыть файл включение: QString: No such file or directory,
+  (компиляция исходного файла "test_rsa.cpp")
+  
+  Создание кода...
